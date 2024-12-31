@@ -1,0 +1,37 @@
+body
+{
+	background-color: lightpink;
+}
+h1
+{
+	text-align: center;
+}
+h3
+{
+	color: purple;
+	background-color: lightyellow;
+	font-family: verdana;
+	border: 2px solid gold;
+}
+purple
+{
+	font-size: 20px;
+	color: lightsalmon;
+}
+table, th, td, tr
+{
+	border: 3px solid hotpink;
+	border-collapse: collapse;
+}
+th
+{
+	background-color: royalblue;
+}
+td
+{
+	text-align: center;
+}
+tr:hover
+{
+	background-color: lightsalmon;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Table</title>
+
+	<style>
+		table, tr, th, td
+		{
+			border: 2px solid red;
+			border-collapse: collapse;
+		}
+		th,td
+		{
+			padding: 45px;
+		}
+		th
+		{
+			background-color: blue;
+			color: yellow;
+			text-align: right;
+		}
+		tr:nth-child(odd)
+		{
+			background-color: yellowgreen;
+		}
+		tr:nth-child(even)
+		{
+			background-color: lightskyblue;
+		}
+		td
+		{
+			text-align: center;
+		}
+		tr:hover
+		{
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Basic Table</h1>
+
+	<table style="width:100%">
+		<caption>Table 1: Basic HTML Table</caption>
+		<tr>
+			<th style="width: 25%">Name</th>
+			<th style="width: 20%">Student ID</th>
+			<th style="width: 40%">Picture</th>
+			<th style="width: 15%">Phone Num</th>
+		</tr>
+
+		<tr>
+			<td>Nurul Izyan Farziana Mohd Zamri</td>
+			<td>2022855122</td>
+			<td><img src="images/jennie.jpeg" style="height: 100px;"></td>
+			<td>01111462469</td>
+		</tr>
+		<tr style="height:250px">
+			<td>Nurul Izyan Farziana Mohd Zamri</td>
+			<td>2022855122</td>
+			<td><img src="images/third.jpg" style="height: 100px;"></td>
+			<td>01111462469</td>
+		</tr>
+		<tr>
+			<td>Nurul Izyan Farziana Mohd Zamri</td>
+			<td>2022855122</td>
+			<td><img src="images/choclate_cake.jpeg" style="height: 100px;"></td>
+			<td>01111462469</td>
+		</tr>
+	</table>
+
+	<h1>Colspan</h1>
+
+	<table style="width: 100%">
+		
+		<tr>
+			<th>Name</th>
+			<th>Student Id</th>
+			<th colspan="3">Subject</th>
+		</tr>
+
+		<tr>
+			<td>Nurul Izyan Farziana</td>
+			<td>2022855122</td>
+			<td>IMD318</td>
+			<td>IMD313</td>
+			<td>IMD310</td>
+		</tr>
+
+	</table>
+
+	<h1>Rowspan</h1>
+
+	<table style="width:70%">
+
+		<tr>
+			<th>Name</th>
+			<td>Izyan</td>
+		</tr>
+
+		<tr>
+			<th rowspan="2">Email</th>
+			<td>farzianaizyan@gmail.com</td>
+		</tr>
+
+		<tr>
+			<td>ifarziana@gmail.com</td>
+		</tr>
+
+		<tr>
+			<th>Alamat</th>
+			<td rowspan="2">Kelantan</td>
+		</tr>	
+
+		<tr>
+			<th>Alamat Surat</th>
+		</tr>	
+	</table>
+
+</body>
+</html>

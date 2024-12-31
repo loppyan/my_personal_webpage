@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Javascripts</title>
+</head>
+<body>
+
+	<iframe src="https://free.timeanddate.com/clock/i9ojaqur/n122/szw110/szh110/hbw0/hfcf99/cf100/hgr0/fav0/fiv0/mqcfff/mql15/mqw4/mqd94/mhcfff/mhl15/mhw4/mhd94/mmv0/hhcbbb/hmcddd/hsceee" frameborder="0" width="110" height="110"></iframe>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.6947729231606!2d102.2734988!3d5.7569976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68fe6f50d123f%3A0xaeb67217536d6442!2sUiTM%20Machang!5e0!3m2!1sen!2smy!4v1734407011637!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+	<h1>Javascripts change content</h1>
+
+	<p id="content1">My name is Izyan</p>
+	<button type="button" onclick='document.getElementById("content1").innerHTML="Also Farziana"'>Change Content</button>
+
+	<h1>Javascripts change style</h1>
+
+	<p id="style1">Holla! Amazing people</p>
+	<script>
+		function myStyle()
+		{
+			document.getElementById("style1").style.fontSize = "28px";
+			document.getElementById("style1").style.fontFamily = "Papyrus";
+			document.getElementById("style1").style.color = "blue";
+			document.getElementById("style1").style.backgroundColor = "yellow";
+		}
+	</script>
+	<button type="button" onclick="myStyle()">Change Style</button>
+
+	<h1>Javascripts manipulate image/attributes</h1>
+
+	<script>
+		function myPicture(a)
+		{
+			var pic;
+			if(a==0)
+			{
+				pic="images/jennie.jpeg"
+			}
+			else
+			{
+				pic="images/third.jpg"
+			}
+			document.getElementById('gambar').src=pic;
+		}
+	</script>
+	<img src="images/jennie.jpeg" id="gambar" width="250px" height="250px">
+	<p>
+		<button type="button" onclick="myPicture(0)">Love</button>
+		<button type="button" onclick="myPicture(1)">Cutie</button>
+	</p>
+
+	<h1>Alert Box</h1>
+
+	<button type="button">Click Here</button>
+	<script>
+		function AlertBox()
+		{
+			alert("Assalaimualaikum. \nwelcome to my page !")
+		}
+	</script>
+
+	<script>
+		{
+			alert("Assalaimualaikum. \nwelcome to my page !")
+		}
+	</script>
+
+</body>
+</html>
